@@ -1,3 +1,30 @@
+/* Dark Mode CSS Override */
+
+body {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff; /* Light text for headers */
+}
+
+p {
+  color: #c7c7c7; /* Slightly dimmer text for paragraphs */
+}
+
+a {
+  color: #bb86fc; /* Light purple color for links */
+}
+
+table {
+  border-color: #323232; /* Dark borders for tables */
+}
+
+th, td {
+  border-color: #323232; /* Dark borders for table cells */
+}
+
 hr {
   margin-top: 30px;
   margin-bottom: 20px;
