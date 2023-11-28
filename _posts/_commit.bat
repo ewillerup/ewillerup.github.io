@@ -2,8 +2,20 @@
 for %%f in (*.md) do (
     set "filename=%%f"
     if "!filename:~0,2!"=="20" (
-        ren "%%f" "new_%%f"
-    )
+	for /f "tokens=2-4 delims=/ " %%a in ('date /t') do (
+    		set month=%%a
+    		set day=%%b
+   		set year=%%c
+	)
+
+	for /f "tokens=1-3 delims=:." %%a in ('echo %time%') do (
+    		set hours=%%a
+    		set minutes=%%b
+    		set seconds=%%c
+	)
+
+	set filename=%year%-%month%-%day%-%filename%.md
+  )
 )
 
 TIMEOUT /T 2
