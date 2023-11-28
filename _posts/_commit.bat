@@ -1,3 +1,13 @@
+@echo off
+for %%f in (*.md) do (
+    set "filename=%%f"
+    if not "!filename:~0,2!"=="20" (
+        ren "%%f" "new_%%f"
+    )
+)
+
+TIMEOUT /T 2
+
 pushd "%userprofile%\Documents\Github\ewillerup.github.io"
 echo.>.gitignore
 bash -c "command find . -type f -size +99M >> .gitignore"
