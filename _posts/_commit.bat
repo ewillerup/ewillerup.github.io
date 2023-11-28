@@ -1,7 +1,7 @@
 @echo off
 for %%f in (*.md) do (
     set "filename=%%f"
-    if not "!filename:~0,2!"=="20" (
+    if "!filename:~0,2!"=="20" (
         ren "%%f" "new_%%f"
     )
 )
