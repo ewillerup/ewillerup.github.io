@@ -5,7 +5,7 @@ description: "Elias Willerup's Blog" # This will show up in places like twitter,
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
 email: "elias@willerup.com"
-twitter_username: "/"
+# twitter_username: "/"
 github_username: "ewillerup"
 linkedin_username: "ewillerup"
 #facebook_username: username
