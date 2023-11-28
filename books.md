@@ -1,7 +1,7 @@
 ---
 layout: page
-title: archive
-description: Archive of all my past blog posts
+title: books
+description: Book reviews and recommendations
 ---
 
 {% for tag in site.tags %}
