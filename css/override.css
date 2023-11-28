@@ -1,33 +1,32 @@
-/* Dark Mode CSS Override */
-
 body {
-  background-color: #121212; /* Dark background */
-  color: #e0e0e0; /* Light text */
+  background-color: #121212;
+  color: #e0e0e0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #ffffff; /* Light text for headers */
+  color: #ffffff;
 }
 
 p {
-  color: #c7c7c7; /* Slightly dimmer text for paragraphs */
+  color: #c7c7c7;
 }
 
 a {
-  color: #bb86fc; /* Light purple color for links */
+  color: #bb86fc;
 }
 
 table {
-  border-color: #323232; /* Dark borders for tables */
+  border-color: #323232;
 }
 
 th, td {
-  border-color: #323232; /* Dark borders for table cells */
+  border-color: #323232;
 }
 
 hr {
   margin-top: 30px;
   margin-bottom: 20px;
+  border-color: #323232;
 }
 
 /* Post navigation links */
