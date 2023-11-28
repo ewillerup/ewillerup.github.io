@@ -1,6 +1,5 @@
-@echo off
 for %%f in (*.md) do (
-    set "filename=%%f"
+    set "filename=%%F"
     if "!filename:~0,2!"=="20" (
 	for /f "tokens=2-4 delims=/ " %%a in ('date /t') do (
     		set month=%%a
@@ -15,6 +14,7 @@ for %%f in (*.md) do (
 	)
 
 	set filename=%year%-%month%-%day%-%filename%.md
+	echo "renamed"
   )
 )
 
