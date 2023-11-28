@@ -13,7 +13,7 @@ for /f "tokens=1-3 delims=:." %%a in ('echo %time%') do (
     set seconds=%%c
 )
 
-set filename=%year%-%month%-%day%_%hours%-%minutes%-%seconds%.md
+set filename=%year%-%month%-%day%-h%hours%-m%minutes%-s%seconds%.md
 
 type nul > "%filename%"
 echo ## >>"%filename%"
