@@ -1,24 +1,3 @@
-for %%f in (*.md) do (
-    set "filename=%%F"
-    if "!filename:~0,2!"=="20" (
-	for /f "tokens=2-4 delims=/ " %%a in ('date /t') do (
-    		set month=%%a
-    		set day=%%b
-   		set year=%%c
-	)
-
-	for /f "tokens=1-3 delims=:." %%a in ('echo %time%') do (
-    		set hours=%%a
-    		set minutes=%%b
-    		set seconds=%%c
-	)
-
-	set filename=!year!-!month!-!day!-!filename!.md
-  )
-)
-
-TIMEOUT /T 2
-
 pushd "%userprofile%\Documents\Github\ewillerup.github.io"
 echo.>.gitignore
 bash -c "command find . -type f -size +99M >> .gitignore"
