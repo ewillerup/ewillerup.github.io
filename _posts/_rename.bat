@@ -23,7 +23,7 @@ for %%f in (*.md) do (
         if !minutes! lss 10 set "minutes=0!minutes!"
         if !seconds! lss 10 set "seconds=0!seconds!"
 
-        set "newname=!year!-!month!-!day!_!hours!!minutes!!seconds!_!filename!"
+        set "newname=!year!-!month!-!day!_!hours!!minutes!!seconds!-!filename!"
         ren "!filename!" "!newname!"
     )
 )
