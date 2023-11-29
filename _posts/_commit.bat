@@ -13,8 +13,7 @@ for %%f in (*.md) do (
     		set seconds=%%c
 	)
 
-	set filename=%year%-%month%-%day%-%filename%.md
-	echo "renamed"
+	set filename=!year!-!month!-!day!-!filename!.md
   )
 )
 
